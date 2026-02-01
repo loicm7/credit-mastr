@@ -1,0 +1,41 @@
+import GenreBeat from "./GenreBeat";
+
+
+function MultiGenreBeats() {
+    return (
+        <div className="col-start-1 col-end-7 bg-(--color-light-dark) pb-50 rounded-b-[80px]">
+            
+            <section className="">
+                
+                <div className="grid grid-cols-6 gap-x-4 gap-y-4">
+                    <div className="col-start-2 col-span-4 text-center">
+                        <h2 className="font-poppins text-5xl md:text-6xl text-center text-base-100 font-bold capitalize mt-25" >Multi Genre for Everyone</h2>
+                        <p className="py-6 font-poppins text-base-100 text-center md:text-[20px]">
+                            Find the sound that fits your style.
+                        </p>
+                        <GenreBeat />
+
+                        <div className="mt-25">
+                            <p className="font-poppins text-base-100 text-center md:text-[18px]">
+                                A new way to make music. Sign up for the waitlist to get early access and behind-the-scenes updates.
+                            </p>
+                            
+
+                            <div className="w-max items-center mx-auto mt-5">
+                                <div className="flex justify-start sm:justify-center md:justify-center lg:justify-start">
+                                    <button className="btn bg-base-100 text-base-content border-base-100 ">Join the waitlist</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    );
+}
+
+export default MultiGenreBeats;

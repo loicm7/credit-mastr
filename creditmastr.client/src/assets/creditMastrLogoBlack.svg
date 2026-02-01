@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1007.18 248.32">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-family: Wavehaus-158ExtraBold, Wavehaus;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        font-family: Wavehaus-95SemiBold, Wavehaus;
+        font-weight: 600;
+      }
+
+      .cls-6 {
+        font-size: 133.91px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <path class="cls-5" d="M104.65,1.1L4.22,58.98C1.66,60.45.09,63.17.09,66.11L0,182.03c0,2.94,1.57,5.66,4.11,7.14l100.34,58.04c2.55,1.47,5.69,1.48,8.24,0l100.43-57.88c1.28-.74,2.31-1.78,3.02-3.01s1.11-2.65,1.11-4.12l.09-115.92c0-2.94-1.57-5.66-4.11-7.14L112.89,1.11c-2.55-1.47-5.69-1.48-8.24,0ZM200.78,177.43l-92.19,53.13-92.11-53.27.08-106.4,1.21-.69,90.18,52.16,90.98-52.43,1.92,1.11-.08,106.4Z"/>
+  <polygon class="cls-5" points="40.66 112.78 40.49 157.53 108.43 197.11 176.69 158.06 176.86 113.22 108.53 152.32 40.66 112.78"/>
+  <text class="cls-6" transform="translate(262.48 170.46)"><tspan class="cls-10" x="0" y="0">C</tspan><tspan class="cls-11" x="91.87" y="0">r</tspan><tspan class="cls-9" x="140.21" y="0">e</tspan><tspan class="cls-7" x="219.09" y="0">d</tspan><tspan class="cls-8" x="303.32" y="0">i</tspan><tspan class="cls-7" x="333.05" y="0">t</tspan><tspan class="cls-1" x="387.68" y="0">M</tspan><tspan class="cls-2" x="493.88" y="0">a</tspan><tspan class="cls-3" x="573.69" y="0">s</tspan><tspan class="cls-4" x="641.99" y="0">tr</tspan></text>
+</svg>
