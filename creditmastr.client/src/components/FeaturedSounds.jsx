@@ -1,12 +1,36 @@
 import SoundFeatured from "./SoundFeatured";
 import WaitlistButton from "./ui/WaitlistButton";
 import { sounds } from "../utils/FeaturedSoundsData";
-//import { useState } from "react";
+import { useState } from "react";
+//import { usePlayPause } from "../hooks/usePlayPause";
 
 
+/**
+ * a component that display a section of audio cards
+ * 
+ * @returns {JSX.Element} react element section containing a list of audio cards
+ */
 function FeaturedSounds() {
 
-    //const [isPlayPause, setIsPlayPause] = useState(false);
+    //const { activeAudioCard, isPlaying, handlePlayPause } = usePlayPause();
+
+    const [activeAudioCard, setActiveAudioCard] = useState(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlayPause = (soundId) => {
+        if (activeAudioCard === soundId) {
+            setIsPlaying(isPlaying => !isPlaying);
+
+        }
+        else {
+            setActiveAudioCard(soundId);
+            setIsPlaying(true);
+        }
+    };
+
+    const handleOnFinish = () => {
+        setIsPlaying(false);
+    };
 
 
     return (
@@ -19,9 +43,16 @@ function FeaturedSounds() {
                 </p>
                 <div className="mt-20 mb-20 grid xl:grid-flow-col xl:grid-rows-3 justify-center gap-4">
                     {/* add sounds featured component */}
-                    {sounds.map((sound) => (
+                    {sounds?.map((sound) => (
 
-                        <SoundFeatured key={sound.id} sound={sound} />
+                        <SoundFeatured
+                            key={sound.id}
+                            sound={sound}
+                            onClick={() => handlePlayPause(sound.id)}
+                            isActive={activeAudioCard === sound.id}
+                            isPlaying={isPlaying}
+                            onFinish={handleOnFinish}
+                        />
                     ))}
                     
                 </div>

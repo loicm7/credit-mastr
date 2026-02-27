@@ -1,4 +1,5 @@
 import GenreBeat from "./GenreBeat";
+import { coverArtData } from "../utils/coverArtData";
 
 
 function MultiGenreBeats() {
@@ -13,7 +14,14 @@ function MultiGenreBeats() {
                         <p className="py-6 font-poppins text-base-100 text-center md:text-[20px]">
                             Find the sound that fits your style.
                         </p>
-                        <GenreBeat />
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-15">
+                            {/* add genre beat cover art audio component*/}
+                            {coverArtData.map((cover) => (
+                                <GenreBeat key={cover.id} cover={cover} />
+                            ))}
+                        </div>
+                       
+                        
 
                         <div className="mt-25">
                             <p className="font-poppins text-base-100 text-center md:text-[18px]">

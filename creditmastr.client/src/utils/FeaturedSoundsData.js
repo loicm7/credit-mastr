@@ -4,7 +4,7 @@ export const sounds = [
         title: "Runner.mp3",
         genre: ["hip-hop", "trap", "beat"],
         imageId: "Runner_oyrwmt",
-        audioUrl: "./audio/trap_beat.wav"
+        audioUrl: "./audio/trap_beat.mp3"
     },
     {
         id: 1,
