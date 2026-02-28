@@ -12,6 +12,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
+import { AudioPlayerContextProvider } from './context/AudioPlayerContext';
 
 
 
@@ -51,6 +52,8 @@ const router = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <RouterProvider router={router} />
+        <AudioPlayerContextProvider>
+            <RouterProvider router={router} />
+        </AudioPlayerContextProvider>
   </StrictMode>
 )

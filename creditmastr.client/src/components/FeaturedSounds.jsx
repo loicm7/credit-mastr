@@ -1,8 +1,9 @@
 import SoundFeatured from "./SoundFeatured";
 import WaitlistButton from "./ui/WaitlistButton";
 import { sounds } from "../utils/FeaturedSoundsData";
-import { useState } from "react";
+//import { useState } from "react";
 //import { usePlayPause } from "../hooks/usePlayPause";
+import { useAudioPlayer } from "../context/AudioPlayerContext";
 
 
 /**
@@ -12,9 +13,12 @@ import { useState } from "react";
  */
 function FeaturedSounds() {
 
+    const { activeAudioCard, isPlaying, handlePlayPause, handleOnFinish } = useAudioPlayer();
+
+
     //const { activeAudioCard, isPlaying, handlePlayPause } = usePlayPause();
 
-    const [activeAudioCard, setActiveAudioCard] = useState(null);
+    /*const [activeAudioCard, setActiveAudioCard] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
     const handlePlayPause = (soundId) => {
@@ -31,7 +35,7 @@ function FeaturedSounds() {
     const handleOnFinish = () => {
         setIsPlaying(false);
     };
-
+    */
 
     return (
         <div className="col-start-2 col-span-4 ">
