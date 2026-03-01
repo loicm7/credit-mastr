@@ -13,6 +13,7 @@ import WavesurferPlayer from "@wavesurfer/react";
 export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onFinish }) {
 
     const wavesurferRef = useRef(null);
+    console.log("sound.id", sound.id);
 
     // fonction qui set l'instance wavesurfer when it's ready
     const onReady = (ws) => {

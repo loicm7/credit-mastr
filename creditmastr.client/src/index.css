@@ -99,11 +99,14 @@ body {
  /*min-height: 100vh;*/
 }
 
-/*h1 {
+/*h1 { 
   font-size: 3.2em;
   line-height: 1.1;
 }*/
 
+#waveform-container.hidden-waveform {
+    display: none !important; /* using !important might be necessary depending on existing styles */
+}
 
 
 

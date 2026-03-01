@@ -1,8 +1,12 @@
 import GenreBeat from "./GenreBeat";
 import { coverArtData } from "../utils/coverArtData";
+import { useAudioPlayer } from "../context/AudioPlayerContext";
 
 
 function MultiGenreBeats() {
+
+    const { activeAudioCard, isPlaying, handlePlayPause, handleOnFinish } = useAudioPlayer();
+
     return (
         <div className="col-start-1 col-end-7 bg-(--color-light-dark) pb-50 rounded-b-[80px]">
             
@@ -17,7 +21,14 @@ function MultiGenreBeats() {
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-15">
                             {/* add genre beat cover art audio component*/}
                             {coverArtData.map((cover) => (
-                                <GenreBeat key={cover.id} cover={cover} />
+                                <GenreBeat
+                                    key={cover.id}
+                                    cover={cover}
+                                    onClick={() => handlePlayPause(cover.id)}
+                                    isActive={activeAudioCard === cover.id}
+                                    isPlaying={isPlaying}
+                                    onFinish={handleOnFinish}
+                                />
                             ))}
                         </div>
                        
