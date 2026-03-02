@@ -1,6 +1,6 @@
 import GenreBeat from "./GenreBeat";
 import { coverArtData } from "../utils/coverArtData";
-import { useAudioPlayer } from "../context/AudioPlayerContext";
+import { useAudioPlayer } from "../hooks/useAudioPlayer";
 
 
 function MultiGenreBeats() {

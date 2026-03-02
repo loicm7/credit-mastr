@@ -3,7 +3,7 @@ import WaitlistButton from "./ui/WaitlistButton";
 import { sounds } from "../utils/FeaturedSoundsData";
 //import { useState } from "react";
 //import { usePlayPause } from "../hooks/usePlayPause";
-import { useAudioPlayer } from "../context/AudioPlayerContext";
+import { useAudioPlayer } from "../hooks/useAudioPlayer";
 
 
 /**

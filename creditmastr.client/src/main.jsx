@@ -12,7 +12,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
-import { AudioPlayerContextProvider } from './context/AudioPlayerContext';
+import { AudioPlayerContextProvider } from './hooks/useAudioPlayer';
 
 
 
