@@ -2,7 +2,7 @@ import { AudioLines, CircleArrowDown, LogOut } from "lucide-react";
 import { Link } from "react-router"; 
 function ValueProposition() {
     return (
-        <div className="col-start-2 col-span-4 mb-15">
+        <div className="col-start-2 col-span-14 mb-15">
             <section>
                 <div className="bg-base-200 rounded-2xl p-15">
                     

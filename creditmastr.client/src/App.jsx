@@ -40,7 +40,7 @@ function App() {
                     
                 </main > */}
 
-                <main className="overflow-clip grid grid-cols-6 gap-x-4 gap-y-16">
+                <main className="overflow-clip grid grid-cols-16 gap-x-4 gap-y-16">
                     {/* HERO SECTION*/}
                     <HeroSection heroSectionImage="InstrumentBoxTransparent_hu1l24" />
 

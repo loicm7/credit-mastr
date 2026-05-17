@@ -8,7 +8,7 @@ function MultiGenreBeats() {
     const { activeAudioCard, isPlaying, handlePlayPause, handleOnFinish } = useAudioPlayer();
 
     return (
-        <div className="col-start-1 col-end-7 bg-(--color-light-dark) pb-50 rounded-b-[80px]">
+        <div className="col-start-1 col-end-17 bg-(--color-light-dark) pb-50 rounded-b-[80px]">
             
             <section className="">
                 

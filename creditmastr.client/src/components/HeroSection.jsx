@@ -2,7 +2,7 @@ import WaitlistButton from "./ui/WaitlistButton";
 import CldHeroSectionImage from "./ui/CldHeroSectionImage";
 function HeroSection({ heroSectionImage }) {
     return (
-        <div className="col-start-1 col-end-7 ">
+        <div className="col-start-1 col-end-17 ">
             <section className="hero  min-h-screen w-full top-0">
                 <div className="relative z-[-3] h-full w-full bg-white">
                     <div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
