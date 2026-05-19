@@ -61,8 +61,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
     return (
         
             <div className=" w-full max-w-md md:max-w-xl  mx-auto  bg-base-200 rounded-lg 
-                flex items-center justify-start gap-x-8 shadow-md p-4 bg-blue-500 min-w-full" 
-            >
+                flex items-center justify-start gap-x-8 shadow-md p-4 bg-blue-500 min-w-full">
                 <div className="w-[72px] h-[72px] shrink-0 ">
                     {/*<img className=" aspect-square rounded-lg object-cover" src={sound.imageId} loading="lazy" alt="Sound Thumbnail" /> */}
                     <CldImage imageId={sound.imageId} className="aspect-square rounded-lg object-cover"
@@ -77,7 +76,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
                     {isActive && isPlaying ? <Pause size={24} fill="black" /> : <Play size={24} fill="black" />}
                 </button>
 
-                <div className="flex flex-col overflow-hidden">
+                <div className="flex w-350 flex-col overflow-hidden">
                     <h1 className="font-semibold text-sm md:text-base lg:text-lg ">{sound.title}</h1>
 
                     <div className="flex flex-row gap-x-1">
@@ -88,11 +87,11 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
 
 
 
-                    {/* div for sound waveform placeholder   aspect-12/1 scale-y-[.4]*/}
-                    <div className="h-full w-full mt-3  aspect-12/1 scale-y-[.4]">
+                    {/* div for sound waveform placeholder   aspect-12/1 aspect-320/64 scale-y-[.4]*/}
+                <div className="h-full w-full mt-3 aspect-350/64 md:aspect-12/1 scale-y-[.4] md:scale-y-[.4]">
                         <WavesurferPlayer
                             height={98}
-                            width={350}
+                            
                             fillParent={true}
                             waveColor={"rgb(160, 160, 160)"}
                             progressColor={"rgb(21, 93, 252)"}
@@ -103,9 +102,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
                             barWidth={2}
                             barHeight={1}
                             cursorWidth={0}
-                            
                            
-
                         />
                     </div>
                 </div>
