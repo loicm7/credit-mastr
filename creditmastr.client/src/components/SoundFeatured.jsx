@@ -61,7 +61,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
     return (
         
             <div className=" w-full max-w-md md:max-w-xl  mx-auto  bg-base-200 rounded-lg 
-                flex items-center justify-start gap-x-8 shadow-md p-4 bg-blue-500 min-w-full">
+                flex items-center justify-start gap-x-8 shadow-md p-4  min-w-full">
                 <div className="w-[72px] h-[72px] shrink-0 ">
                     {/*<img className=" aspect-square rounded-lg object-cover" src={sound.imageId} loading="lazy" alt="Sound Thumbnail" /> */}
                     <CldImage imageId={sound.imageId} className="aspect-square rounded-lg object-cover"
@@ -79,9 +79,9 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
                 <div className="flex w-350 flex-col overflow-hidden">
                     <h1 className="font-semibold text-sm md:text-base lg:text-lg ">{sound.title}</h1>
 
-                    <div className="flex flex-row gap-x-1">
+                <div className="flex flex-row gap-x-1 mask-r-from-90% md:mask-r-from-100%">
                         {sound?.genre?.map((genre) => (
-                            <p key={genre} className="badge badge-neutral">{genre}</p>
+                            <p key={genre} className="badge badge-sm md:badge-md badge-neutral whitespace-nowrap shrink-0">{genre}</p>
                         ))}
                     </div>
 
