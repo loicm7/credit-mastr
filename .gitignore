@@ -361,3 +361,20 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Rider / JetBrains
+.idea/
+
+# ASP.NET
+bin/
+obj/
+
+# Node
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Environment variables
+.env

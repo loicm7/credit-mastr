@@ -12,4 +12,17 @@
     <Folder Include="src\services\api\" />
     <Folder Include="src\services\state\" />
   </ItemGroup>
+  <ItemGroup>
+    <Script Include="react-router.config.ts" />
+    <Script Include="src\entry.client.tsx" />
+    <Script Include="src\root.tsx" />
+    <Script Include="src\routes.ts" />
+    <Script Include="src\routes\howItWorks.tsx" />
+    <Script Include="src\routes\notFound.tsx" />
+    <Script Include="src\routes\pricing.tsx" />
+    <Script Include="tsconfig.json" />
+    <Script Include="vite.config.ts" />
+    <Script Include="src\**\*.ts" />
+    <Script Include="src\**\*.tsx" />
+  </ItemGroup>
 </Project>
