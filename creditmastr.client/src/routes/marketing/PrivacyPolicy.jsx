@@ -1,6 +1,6 @@
 function PrivacyPolicy() {
   return (
-    <p>Hello world!</p>
+    <p>Privacy Policy page</p>
   );
 }
 

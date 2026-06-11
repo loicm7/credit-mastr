@@ -1,14 +1,13 @@
-import './App.css';
-import './index.css'
+import '../../App.css';
+import '../../index.css'
 
 //import heroSectionImage from './assets/InstrumentBoxTransparent.png';
-import logo from "./assets/creditMastrLogoBlack.webp";
-import Navbar from './components/Navbar.jsx';
-import HeroSection from './components/HeroSection.jsx';
-import FeaturedSounds from './components/FeaturedSounds.jsx';
-import ValueProposition from './components/ValueProposition.jsx';
-import MultiGenreBeats from './components/MultiGenreBeats.jsx';
-import Footer from './components/Footer';
+
+import HeroSection from '../../components/HeroSection.jsx';
+import FeaturedSounds from '../../components/FeaturedSounds.jsx';
+import ValueProposition from '../../components/ValueProposition.jsx';
+import MultiGenreBeats from '../../components/MultiGenreBeats.jsx';
+
 
 
 
@@ -23,12 +22,11 @@ function App() {
 
         <>
 
-            <div className="isolate flex flex-col">
-                {/* (blue) radial gradient backgrounf on top */}
+            
+                {/* (blue) radial gradient background on top */}
                 <div className="absolute top-0 z-[-2] h-full w-full bg-transparent bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(21,163,255,0)_100%)]"></div>
 
-                 {/* BARRE DE NAVIGATION*/}
-                    <Navbar logo={logo} />
+                 
 
                 {/*
                 <main className="overflow-clip rounded-b-32">
@@ -55,9 +53,8 @@ function App() {
 
                 </main >
 
-                {/* FOOTER */}
-                <Footer />
-            </div>
+                
+            
 
             {/* grid column 6 example 
             <div class="bg-gray-100 p-8">

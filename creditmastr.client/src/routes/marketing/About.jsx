@@ -1,6 +1,6 @@
 function About() {
   return (
-    <p>Hello world!</p>
+    <p>About page</p>
   );
 }
 

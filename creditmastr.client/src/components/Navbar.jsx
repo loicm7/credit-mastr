@@ -1,24 +1,36 @@
+import { Link, NavLink } from "react-router";
 
+const navLinkClass = ({ isActive }) => 
+    isActive ? "bg-neutral text-neutral-content text-[15px] font-semibold pointer-events-auto" 
+        : "text-[15px] font-semibold pointer-events-auto";
 
 function Navbar({ logo }) {
     return (
         <header className=" flex justify-center sticky top-0 z-10 pointer-events-none">
-            <nav className="navbar shadow-sm bg-base-100/60 backdrop-blur-sm rounded-[1.5vw] px-8 border-1 border-base-200/20 top-5 w-[780px] pointer-events-auto">
+            <nav className="navbar shadow-sm bg-base-100/60 backdrop-blur-sm rounded-[1.5vw] px-8 
+            border-1 border-base-200/20 top-5 w-[780px] pointer-events-auto">
                 <div className="navbar-start">
 
 
                     <div className="flex items-center">
-                        <img
-                            src={logo}
-                            alt="Logo"
-                            className=" w-auto object-contain h-8 sm:h-10 md:h-10"
-                        />
+                        <Link to="/">
+                            <img
+                                src={logo}
+                                alt="Logo"
+                                className=" w-auto object-contain h-8 sm:h-10 md:h-10"
+                            />
+                        </Link>
+                        
                     </div>
 
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a className="text-[15px] font-semibold pointer-events-auto">Pricing</a></li>
+                    <ul className="menu menu-horizontal px-1 flex gap-3">
+                        <li>
+                            <NavLink className={navLinkClass} to="/pricing" >
+                                Pricing
+                            </NavLink>
+                        </li>
                         {/*<li>
                                     <details>
                                         <summary className="pointer-events-auto">Parent</summary>
@@ -28,7 +40,11 @@ function Navbar({ logo }) {
                                         </ul>
                                     </details>
                                 </li>*/}
-                        <li><a className="text-[15px] font-semibold pointer-events-auto ">How it works</a></li>
+                        <li>
+                            <NavLink className={navLinkClass} to="/how-it-works">
+                            How it works
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end">

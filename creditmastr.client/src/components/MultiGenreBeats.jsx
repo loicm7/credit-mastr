@@ -35,8 +35,9 @@ function MultiGenreBeats() {
                         
 
                         <div className="mt-25">
+                            <h2 className="font-poppins text-base-100 mb-5 text-xl md:text-4xl font-semibold">A new way to make music</h2>
                             <p className="font-poppins text-base-100 text-center md:text-[18px]">
-                                A new way to make music. Sign up for the waitlist to get early access and behind-the-scenes updates.
+                                Sign up for the waitlist to get early access and behind-the-scenes updates.
                             </p>
                             
 
