@@ -3,8 +3,8 @@
 ## Project Overview
 
 This is a full-stack application with:
-- **Backend**: ASP.NET Core 8 (creditmastr.Server)
-- **Frontend**: React 19 + Vite + Tailwind CSS v4 (creditmastr.client)
+- **Backend**: ASP.NET Core 10 (creditmastr.Server)
+- **Frontend**: React Router framework mode v7 + Vite + Tailwind CSS v4 (creditmastr.client)
 
 ## Build/Lint/Test Commands
 
@@ -58,7 +58,7 @@ dotnet dev-certs https --export-path <path> --format Pem --no-password
 - Keep functions small and focused (single responsibility)
 - Handle errors gracefully with try/catch blocks
 
-### Frontend (React/JavaScript)
+### Frontend (React/React Router framework mode v7/JavaScript/TypeScript)
 
 #### Imports
 - Use absolute imports with `@/` alias (configured in vite.config.js)
@@ -108,7 +108,84 @@ export function ComponentName() {
 - Enabled rules from `@eslint/js`, `react-hooks`, `react-refresh`
 - `no-unused-vars`: error except vars starting with uppercase (React components)
 
-### Backend (C#)
+### React Router v7 (Framework Mode) Guidelines
+
+You must strictly follow the architectural patterns of React Router v7 Framework Mode. Do not treat this project as a traditional Vite Single Page Application or an old Remix project.
+
+#### 1. Core Architectural Constraints
+- **Framework Mode Only**: Use full-stack framework capabilities, assuming a Vite-plugin-managed environment.
+- **Imports Rule**: Never import from `react-router-dom` or `@remix-run/*`. Always import exclusively from `"react-router"`.
+- **Routing Configuration**: Use both Manual Route Configuration by default and File-Based Routing only for simple route, standard marketing or content pages like blog. Explicitly define routes in `app/routes.ts` or `src/routes.ts` using the `route()` or `index()` or `index()` configuration functions. Do not use `<Routes>` or `<Route>` JSX elements for global routing definitions:
+```ts
+// app/routes.ts or src/routes.ts
+import { type RouteConfig } from "@react-router/dev/routes";
+import { flatRoutes } from "@react-router/fs-routes";
+
+export default flatRoutes() satisfies RouteConfig;
+```
+
+**File-system conventions** (`app/routes/`):
+
+- `_index.tsx` → `/` (index route)
+- `about.tsx` → `/about`
+- `blog.$slug.tsx` → `/blog/:slug` (URL param)
+- `settings.profile.tsx` → `/settings/profile` (`.` creates nesting)
+- `_layout.tsx` → pathless layout route
+
+**Manual config**:
+
+```ts
+import { index, route, layout } from "@react-router/dev/routes";
+export default [
+  index("./home.tsx"),
+  route("about", "./about.tsx"),
+  layout("./auth-layout.tsx", [route("login", "./login.tsx")]),
+];
+```
+
+#### 2. Route Module Design Rules
+Every route template file must follow the unified Type-Safe Route Module pattern. Ensure that data dependencies, meta tags, and component layouts live within the same file.
+
+* **Data Fetching (`loader`)**: Always perform server-side or client-side initial data loads through an exported async `loader` function.
+* **Data Mutations (`action`)**: Always perform form handling and server-side POST/PUT/DELETE mutations via an exported async `action` function.
+* **SEO Metadata (`meta`)**: Export a type-safe `meta` function to control dynamic meta tags. Use `MetaFunctionArgs` to pull from the loader's returned payload.
+* **Component Rendering**: Export a default component that consumes `Route.ComponentProps` to get typed `loaderData` and `actionData`.
+
+#### Correct Route Template Syntax Blueprint:
+```tsx
+import type { Route } from "./+types/example-route";
+
+export async function loader({ params, request }: Route.LoaderArgs) {
+const data = await fetchYourData(params.id);
+return { data };
+}
+
+export async function action({ request }: Route.ActionArgs) {
+const formData = await request.formData();
+return await handleMutation(formData);
+}
+
+export function meta({ data }: Route.MetaArgs) {
+return [
+{ title: `Viewing: ${data?.data?.title ?? "Loading..."}` },
+    ];
+}
+
+export default function RouteComponent({ loaderData, actionData }: Route.ComponentProps) {
+return (
+<div>
+    <h1>{loaderData.data.title}</h1>
+</div>
+    );
+}
+```
+#### 3. Navigation and Data Submission Restrictions
+* **Standard Transitions**: Use the `<Link>` or `<NavLink>`component for client-side transitions.
+* **Mutations UI**: Use the `<Form>` component to declare standard data updates that trigger route actions.
+* **Background Operations**: Use the `useFetcher()` hook for background mutations or data loads that shouldn't cause structural page navigation (e.g., toggling a favorite star). Prefer `fetcher.Form` over raw browser fetches.
+
+
+### Backend (ASP.NET Web api/C#)
 
 #### Naming Conventions
 - Classes/Methods/Properties: PascalCase (`WeatherForecastController`)

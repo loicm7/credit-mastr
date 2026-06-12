@@ -1,6 +1,6 @@
 function TermsOfUse() {
   return (
-    <p className="text-black text-5xl">Hello world!</p>
+    <p className="text-black text-5xl">Terms page</p>
   );
 }
 
