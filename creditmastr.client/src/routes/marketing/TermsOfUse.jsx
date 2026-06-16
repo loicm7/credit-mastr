@@ -252,12 +252,6 @@ const sections = [
   },
 ];
 
-const plans = [
-  { name: "Free", price: "$0.00 / month", credits: "50 credits", use: "Non-commercial use" },
-  { name: "Standard", price: "$14.99 / month", credits: "200 credits", use: "Commercial use" },
-  { name: "Pro", price: "$39.99 / month", credits: "500 credits", use: "Bonus content included" },
-];
-
 const contacts = [
   { label: "General Support", value: "support@creditmastr.com", href: "mailto:support@creditmastr.com" },
   { label: "Billing", value: "billing@creditmastr.com", href: "mailto:billing@creditmastr.com" },
@@ -285,12 +279,12 @@ function TermsOfUse() {
               <span>June 12, 2026</span>
             </div>
             <div className="rounded-lg border border-base-300 bg-white p-4">
-              <span className="block font-semibold text-neutral">Version</span>
-              <span>1.0</span>
-            </div>
-            <div className="rounded-lg border border-base-300 bg-white p-4 sm:col-span-2 lg:col-span-1">
               <span className="block font-semibold text-neutral">Last Updated</span>
               <span>June 15, 2026</span>
+            </div>
+            <div className="rounded-lg border border-base-300 bg-white p-4 sm:col-span-2 lg:col-span-1">
+              <span className="block font-semibold text-neutral">Version</span>
+              <span>1.0</span>
             </div>
           </div>
         </div>
@@ -315,19 +309,7 @@ function TermsOfUse() {
         </aside>
 
         <div className="min-w-0">
-          <div className="mb-10 rounded-lg border border-base-300 bg-base-100 p-5 sm:p-6">
-            <h2 className="text-xl font-semibold text-neutral">Subscription Plans</h2>
-            <div className="mt-5 grid gap-3 md:grid-cols-3">
-              {plans.map((plan) => (
-                <div className="rounded-lg border border-base-300 bg-white p-4" key={plan.name}>
-                  <h3 className="font-semibold text-neutral">{plan.name}</h3>
-                  <p className="mt-2 text-sm text-neutral/70">{plan.price}</p>
-                  <p className="mt-3 text-sm font-medium text-neutral">{plan.credits}</p>
-                  <p className="mt-1 text-sm text-neutral/70">{plan.use}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          
 
           <div className="space-y-10">
             {sections.map((section) => (
