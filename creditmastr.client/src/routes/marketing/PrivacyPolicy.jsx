@@ -177,7 +177,7 @@ function PrivacyPolicy() {
       <section className="border-b border-base-300 bg-base-200">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
           <div className="max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-primary">Creditmastr privacy</p>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-blue-600">Creditmastr privacy</p>
             <h1 className="text-4xl font-bold text-neutral sm:text-5xl lg:text-6xl">Privacy Policy</h1>
             <p className="mt-5 text-lg leading-8 text-neutral/70">
               This Privacy Policy explains what information Credit Mastr collects, how we use it, when we share it,
@@ -221,25 +221,7 @@ function PrivacyPolicy() {
         </aside>
 
         <div className="min-w-0">
-          <div className="mb-10 rounded-lg border border-base-300 bg-base-200 p-5 sm:p-6">
-            <h2 className="text-xl font-semibold text-neutral">Summary of Key Points</h2>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-lg border border-base-300 bg-white p-4">
-                <span className="block text-sm font-semibold text-neutral">We do not sell personal data.</span>
-                <span className="mt-1 block text-sm leading-6 text-neutral/70">
-                  Your information may be shared only with service providers, partners with your consent, authorities,
-                  or an acquiring entity during a business transfer.
-                </span>
-              </div>
-              <div className="rounded-lg border border-base-300 bg-white p-4">
-                <span className="block text-sm font-semibold text-neutral">You control your privacy rights.</span>
-                <span className="mt-1 block text-sm leading-6 text-neutral/70">
-                  Depending on your location, you may request access, correction, deletion, portability, restriction,
-                  objection, or withdrawal of consent.
-                </span>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="space-y-10">
             {sections.map((section) => (
