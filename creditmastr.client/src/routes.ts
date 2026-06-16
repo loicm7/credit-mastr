@@ -39,7 +39,7 @@ export default [
 
     // Marketing
     layout("routes/marketing/_layout.jsx", [
-        index("routes/marketing/App.jsx"),
+        index("routes/marketing/app.jsx"),
         route("/pricing",        "routes/marketing/Pricing.jsx"),
         route("/how-it-works",   "routes/marketing/HowItWorks.jsx"),
         route("/about",          "routes/marketing/About.jsx"),
