@@ -6,6 +6,15 @@
 @theme {
     --font-poppins: "Poppins", system-ui, sans-serif;
     --color-light-dark: #242424;
+
+    /* Define the animation utility name as a CSS variable */
+    --animate-marquee: marquee 70s linear infinite;
+
+    /* Embed the standard CSS keyframes right inside the theme block */
+    @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+    }
 }
 
 
