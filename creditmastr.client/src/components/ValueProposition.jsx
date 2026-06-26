@@ -1,5 +1,6 @@
 import { AudioLines, CircleArrowDown, LogOut } from "lucide-react"; 
 import { Link } from "react-router"; 
+import CldHeroSectionImage from "./ui/CldHeroSectionImage";
 function ValueProposition() {
     return (
         <div className="col-start-2 col-span-14 mb-15">

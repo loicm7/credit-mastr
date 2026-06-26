@@ -6,6 +6,7 @@ import '../../index.css'
 import HeroSection from '../../components/HeroSection.jsx';
 import FeaturedSounds from '../../components/FeaturedSounds.jsx';
 import ValueProposition from '../../components/ValueProposition.jsx';
+import BeforeValueProposition from '../../components/BeforeValueProposition.jsx';
 import MultiGenreBeats from '../../components/MultiGenreBeats.jsx';
 
 
@@ -45,6 +46,9 @@ function App() {
                     {/* FEATURE SECTION*/}
                     <FeaturedSounds />
 
+                    {/* VALUE PROPOSITION SECTION*/}
+                    <BeforeValueProposition />
+                    
                     {/* VALUE PROPOSITION SECTION*/}
                     <ValueProposition />
 
