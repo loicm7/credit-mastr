@@ -22,7 +22,7 @@ export default function MarqueeSlider() {
     return (
         <div className="w-full bg-white py-12">
             {/* 1. Main Container with Gradient Fade Overlays */}
-            <div className="relative mx-auto max-w-7xl overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-linear-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-linear-to-l after:from-white after:to-transparent">
+            <div className="relative mx-auto overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
 
                 {/* 2. Scrolling Track */}
                 <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">

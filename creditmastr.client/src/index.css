@@ -6,17 +6,43 @@
 @theme {
     --font-poppins: "Poppins", system-ui, sans-serif;
     --color-light-dark: #242424;
-
+    
     /* Define the animation utility name as a CSS variable */
-    --animate-marquee: marquee 70s linear infinite;
+    --animate-marquee: marquee 100s linear infinite;
 
     /* Embed the standard CSS keyframes right inside the theme block */
     @keyframes marquee {
         0% { transform: translateX(0%); }
         100% { transform: translateX(-50%); }
     }
+
+    /* This automatically generates the 'animate-fade-in' utility class */
+    --animate-fade-in: fade-in 0.8s ease-out forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(20px); /* Optional: Adds a slight upward slide */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+}
+/* Utility for animating the gradient line below word*/
+@utility animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: shift-bg 4s linear infinite;
 }
 
+/* Custom keyframes used by animate-gradient-shift utility */
+@keyframes shift-bg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 /*@layer base {
     html {
