@@ -5,7 +5,7 @@ function ValueProposition() {
     return (
         <div className="col-start-2 col-span-14 mb-15">
             <section>
-                <div className="bg-base-200 rounded-2xl p-15">
+                <div className="bg-base-200 rounded-4xl p-15">
                     
                     <h2 className="font-poppins text-5xl md:text-6xl text-center font-bold capitalize mt-5" >Why Choose Credit Mastr?</h2>
                     <p className="py-6 font-poppins text-base-content text-center md:text-[20px]">
