@@ -11,16 +11,16 @@ function HowItWorks() {
 
                 <section className="bg-gray-100 p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-semibold mb-4">Downloading Music</h2>
-                    <p className="text-gray-700">With your credit subscription, you can easily browse our collection and use your credits to download the tracks you love. Simply select a track, confirm your download, and it’s yours to use!</p>
+                    <p className="text-gray-700">With your credit subscription, you can easily browse our collection and use your credits to download the tracks you love. Simply select a track, confirm your download, and itï¿½s yours to use!</p>
                 </section>
 
                 <section className="bg-gray-100 p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-semibold mb-4">Licensing and Royalty-Free Usage</h2>
-                    <p className="text-gray-700">All downloads come with a royalty-free license. This means you can use the music in your projects without worrying about additional fees or royalties. Whether it’s for personal or commercial use, you’re covered!</p>
+                    <p className="text-gray-700">All downloads come with a royalty-free license. This means you can use the music in your projects without worrying about additional fees or royalties. Whether itï¿½s for personal or commercial use, youï¿½re covered!</p>
                 </section>
                 <section className="bg-gray-100 p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-semibold mb-4">Licensing and Royalty-Free Usage</h2>
-                    <p className="text-gray-700">All downloads come with a royalty-free license. This means you can use the music in your projects without worrying about additional fees or royalties. Whether it’s for personal or commercial use, you’re covered!</p>
+                    <p className="text-gray-700">All downloads come with a royalty-free license. This means you can use the music in your projects without worrying about additional fees or royalties. Whether itï¿½s for personal or commercial use, youï¿½re covered!</p>
                 </section>
 
             </div>

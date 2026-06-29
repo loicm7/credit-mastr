@@ -8,6 +8,8 @@ import FeaturedSounds from '../../components/FeaturedSounds.jsx';
 import ValueProposition from '../../components/ValueProposition.jsx';
 import BeforeValueProposition from '../../components/BeforeValueProposition.jsx';
 import MultiGenreBeats from '../../components/MultiGenreBeats.jsx';
+import FAQs from '../../components/FAQs.jsx';
+import CTA from '../../components/CTA.jsx';
 
 
 
@@ -46,14 +48,18 @@ function App() {
                     {/* FEATURE SECTION*/}
                     <FeaturedSounds />
 
-                    {/* VALUE PROPOSITION SECTION*/}
+                    {/* VALUE PROPOSITION SECTION 1*/}
                     <BeforeValueProposition />
                     
-                    {/* VALUE PROPOSITION SECTION*/}
+                    {/* VALUE PROPOSITION SECTION 2*/}
                     <ValueProposition />
 
                     {/* MULTI GENRE BEATS SECTION*/}
                     <MultiGenreBeats />
+
+                    <FAQs />
+
+                    <CTA />
 
                 </main >
 

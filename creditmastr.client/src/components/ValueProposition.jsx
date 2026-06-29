@@ -12,17 +12,17 @@ function ValueProposition() {
                         Instant access to ready-to-use beats, stems and sounds without the hassle or high costs.
                     </p>
                     <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md">
                             <AudioLines size={50} color="black" />
                             <h3 className="font-poppins text-2xl font-semibold mb-4">Sounds & Stems</h3>
                             <p className="font-poppins text-base text-gray-700">Multi genre beats, samples and multitracks that give you full control.</p>
                         </article>
-                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md">
                             <CircleArrowDown size={50} color="black" />
                             <h3 className="font-poppins text-2xl font-semibold mb-4">100% Royalty Free</h3>
                             <p className="font-poppins text-base text-gray-700"> Use every track and sounds legally for commercial use.</p>
                         </article>
-                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-4xl shadow-md">
                             <LogOut size={50} color="black" />
                             <h3 className="font-poppins text-2xl font-semibold mb-4">Cancel Anytime</h3>
                             <p className="font-poppins text-base text-gray-700">No Commitment. Start when you are ready and stop when you want.</p>

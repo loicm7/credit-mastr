@@ -1,5 +1,4 @@
-import CldHeroSectionImage from "./ui/CldHeroSectionImage";
-import {Check, ArrowRight} from 'lucide-react';
+import {Check, ArrowRight, BadgeDollarSign, Layers, Ban} from 'lucide-react';
 import CldBeforeValuePropositionImg from "@/components/ui/CldBeforeValuePropositionImg.jsx";
 
 function BeforeValueProposition() {
@@ -93,9 +92,9 @@ function BeforeValueProposition() {
                         </div>
                         <div
                             className=" flex-none md:flex-none lg:flex-1 p-5 md:p-10  xl:p-5 ">
-                            <h2 className="font-poppins text-2xl md:text-5xl  font-bold text-[#2563eb] leading-tight">
+                            <h2 className="font-poppins text-2xl md:text-5xl  font-bold text-black  leading-tight">
                                 Find the perfect 
-                                <span className="relative block w-fit italic">
+                                <span className="relative block w-fit italic text-[#2563eb]">
                                     sound
                                 </span>
                             </h2>
@@ -143,9 +142,9 @@ function BeforeValueProposition() {
                         </div>
                         <div
                             className=" flex-none md:flex-none lg:flex-1 p-5 md:p-10  xl:p-5 ">
-                            <h2 className="font-poppins text-2xl md:text-5xl  font-bold text-[#2563eb] leading-tight">
+                            <h2 className="font-poppins text-2xl md:text-5xl  font-bold text-black  leading-tight">
                                 Never run out of 
-                                <span className="relative block w-fit italic">
+                                <span className="relative block w-fit italic text-[#2563eb]">
                                     inspiration
                                 </span>
                             </h2>
@@ -181,6 +180,56 @@ function BeforeValueProposition() {
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="relative mb-15 overflow-hidden rounded-2xl bg-white px-5 py-12 md:px-8 md:py-18 xl:px-12">
+                <div className="grid gap-6 md:grid-cols-[1.25fr_1fr] md:items-center md:gap-12">
+                    <h2 className="font-poppins text-3xl font-semibold leading-tight text-black md:text-5xl">
+                        Why music platforms
+                        <span className="block italic">are not this simple</span>
+                    </h2>
+                    <p className="font-poppins text-[15px] leading-relaxed text-[#9a9a9a] md:text-[17px]">
+                        Licensing marketplaces and creation platforms can look easy at first, but the real cost often shows up after you start building.
+                    </p>
+                </div>
+
+                <div className="mt-10 grid gap-5 md:grid-cols-3">
+                    <article className="rounded-2xl border border-solid border-[#2d2d2d12] bg-white p-7  md:p-8">
+                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#f5f5f5]">
+                            <BadgeDollarSign className="h-5 w-5 text-black"/>
+                        </div>
+                        <h3 className="font-poppins text-xl font-semibold text-black">
+                            Hidden fees
+                        </h3>
+                        <p className="mt-4 font-poppins text-[15px] leading-relaxed text-[#9a9a9a]">
+                            Music platform fees, and upgrade costs can turn a simple license into a moving target.
+                        </p>
+                    </article>
+
+                    <article className="rounded-2xl border border-solid border-[#2d2d2d12] bg-white p-7  md:p-8">
+                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#f5f5f5]">
+                            <Layers className="h-5 w-5 text-black"/>
+                        </div>
+                        <h3 className="font-poppins text-xl font-semibold text-black">
+                            Inconsistent pricing
+                        </h3>
+                        <p className="mt-4 font-poppins text-[15px] leading-relaxed text-[#9a9a9a]">
+                            Producers often set different prices for beats, samples, loops, and drum kits, making budgets hard to predict.
+                        </p>
+                    </article>
+
+                    <article className="rounded-2xl border border-solid border-[#2d2d2d12] bg-white p-7  md:p-8">
+                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#f5f5f5]">
+                            <Ban className="h-5 w-5 text-black"/>
+                        </div>
+                        <h3 className="font-poppins text-xl font-semibold text-black">
+                            Lost credits
+                        </h3>
+                        <p className="mt-4 font-poppins text-[15px] leading-relaxed text-[#9a9a9a]">
+                            Cancel a subscription and unused credits or tokens can disappear, even when you already paid for them.
+                        </p>
+                    </article>
                 </div>
             </section>
         </div>
