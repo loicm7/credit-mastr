@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "Can I purchase credits if I run out?",
-        answer: "Yes, you can purchase additional download credits.",
+        answer: "Yes, you can purchase additional download credits or upgrade your subscription plan at any time.",
     },
     {
         question: "How many credits do sounds cost?",
@@ -29,6 +29,22 @@ const faqs = [
     {
         question: "Where does your music come from?",
         answer: "We work with talented music producers, musicians and sound engineers from around the world to bring you high-quality, original sounds that are in tune with your creative needs.",
+    },
+    {
+        question: "Are there any restrictions on how I use the sound (beat, sample, stems or MIDI)?",
+        answer: "The royalty-free license allows for broad usage, but redistribution or resale of the sound as standalone files is prohibited.",
+    },
+    {
+        question: "Can I cancel my subscription?",
+        answer: "Yes, you can cancel at any time.",
+    },
+    {
+        question: "What happens if I cancel my Credit Mastr plan?",
+        answer: "When you cancel a plan, it will remain active until the end of the current billing period. Your remaining credits will not expire until you use them. After canceling, you still have access to the platform. You can also re-download any previously purchased beats, samples, loops, stems that are already in your library.",
+    },
+    {
+        question: "Do you offer a free plan?",
+        answer: "We will offer a 30-day free trial of our plans so you can experience Credit Mastr for yourself.",
     },
 ];
 
