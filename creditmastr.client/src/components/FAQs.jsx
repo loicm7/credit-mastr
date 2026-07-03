@@ -12,11 +12,12 @@ const faqs = [
     },
     {
         question: "Can I use it for free?",
-        answer: "Downloading and using Creditmastr's sounds requires an active subscription or a license.",
+        answer: "Downloading and using Credit Mastr's sounds requires an active subscription or a license.",
     },
     {
         question: "Are your instrumentals and samples royalty-free?",
-        answer: "Yes! The instrumentals and samples on Creditmastr are royalty-free until it hits big, meaning you can use them in your project without having to pay royalties to artists or rights until your track hits a million streams or is released by a major label. A Clearance will be required.",
+        answer: "Yes! The instrumentals and samples on Credit Mastr are royalty-free until it hits big, meaning you" +
+            " can use them in your project without having to pay royalties to artists or rights until your track hits a million streams or is released by a major label. A Clearance will be required.",
     },
     {
         question: "Can I purchase credits if I run out?",

@@ -1,75 +1,162 @@
-import React from "react";
+import { Check, X} from 'lucide-react';
+import FAQs from "@/components/FAQs.jsx";
+import CTA from "@/components/CTA.jsx";
+const CheckIcon = () => (
+  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 shrink-0">
+    <Check className="w-3 h-3 text-white" aria-hidden="true"  strokeWidth={4}
+    />
+    
+  </span>
+);
 
-function Pricing() {
- return (
-   <div className="bg-base-100 text-base-content">
-     <header className="text-center py-10">
-       <h1 className="font-bold md:text-[60px] text-[40px] font-poppins">
-         Pricing Plans
-       </h1>
-       <p className="text-lg md:text-xl mt-4">
-         Choose the plan that fits your needs and start making amazing music.
-       </p>
-     </header>
+const CrossIcon = () => (
+  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 shrink-0">
+    
+    <X className="w-3 h-3 text-white" aria-hidden="true"  strokeWidth={4} />
+  </span>
+);
 
-     <section className="flex flex-wrap justify-center gap-8 py-10">
-       {/* Basic Plan */}
-       <div className="border rounded-lg shadow-lg p-6 w-80 bg-base-200">
-         <h2 className="text-2xl font-semibold mb-4">Basic</h2>
-         <p className="text-lg mb-6">Perfect for beginners.</p>
-         <ul className="list-disc list-inside mb-6">
-           <li>Access to 50 sounds</li>
-           <li>Standard quality</li>
-           <li>Community support</li>
-         </ul>
-         <p className="text-3xl font-bold mb-4">$9.99/month</p>
-         <button className="btn btn-primary w-full">Choose Basic</button>
-       </div>
+const FeatureItem = ({ included, label }) => (
+  <li className="flex items-center gap-3">
+    {included ? <CheckIcon /> : <CrossIcon />}
+    <span
+      className={
+        included
+          ? "text-sm text-base-content"
+          : "text-sm text-base-content/40 line-through"
+      }
+    >
+      {label}
+    </span>
+  </li>
+);
 
-       {/* Pro Plan */}
-       <div className="border rounded-lg shadow-lg p-6 w-80 bg-base-200">
-         <h2 className="text-2xl font-semibold mb-4">Pro</h2>
-         <p className="text-lg mb-6">For professional creators.</p>
-         <ul className="list-disc list-inside mb-6">
-           <li>Access to 500 sounds</li>
-           <li>High-quality audio</li>
-           <li>Priority support</li>
-         </ul>
-         <p className="text-3xl font-bold mb-4">$19.99/month</p>
-         <button className="btn btn-primary w-full">Choose Pro</button>
-       </div>
+const plans = [
+  {
+    id: "Creator",
+    name: "Creator",
+    credits: 100,
+    featured: false,
+    features: [
+      { label: "100 credits", included: true },
+      {
+        label: "Download instrumentals, stems, samples, one shots",
+        included: true,
+      },
+      { label: "AI-powered search and discovery", included: false },
+      { label: "Advanced sound filters", included: false },
+    ],
+  },
+  {
+    id: "pro",
+    name: "Pro",
+    credits: 200,
+    featured: true,
+    features: [
+      { label: "200 credits", included: true },
+      {
+        label: "Download instrumentals, stems, samples, one shots",
+        included: true,
+      },
+      { label: "AI-powered search and discovery", included: true },
+      { label: "Advanced sound filters", included: true },
+    ],
+  },
+  {
+    id: "pro-plus",
+    name: "Pro+",
+    credits: 400,
+    featured: false,
+    features: [
+      { label: "400 credits", included: true },
+      {
+        label: "Download instrumentals, stems, samples, one shots",
+        included: true,
+      },
+      { label: "AI-powered search and discovery", included: true },
+      { label: "Advanced sound filters", included: true },
+    ],
+  },
+];
 
-       {/* Premium Plan */}
-       <div className="border rounded-lg shadow-lg p-6 w-80 bg-base-200">
-         <h2 className="text-2xl font-semibold mb-4">Premium</h2>
-         <p className="text-lg mb-6">For the ultimate experience.</p>
-         <ul className="list-disc list-inside mb-6">
-           <li>Unlimited sounds</li>
-           <li>Studio-quality audio</li>
-           <li>Dedicated support</li>
-         </ul>
-         <p className="text-3xl font-bold mb-4">$29.99/month</p>
-         <button className="btn btn-primary w-full">Choose Premium</button>
-       </div>
-     </section>
+export function Pricing() {
+  return (
+    <div className="min-h-screen bg-white py-20 px-4">
+      <header className="text-center mb-16 mt-15">
+        <h1 className="font-poppins font-bold text-5xl md:text-6xl text-base-content tracking-tight">
+          Pricing Plans
+        </h1>
+        <p className="mt-4 font-poppins text-base md:text-lg text-base-content/60 max-w-lg mx-auto">
+          Choose the plan that fits your needs and start making amazing music.
+        </p>
+      </header>
 
-     <section className="py-10">
-       <div className="text-center">
-         <h2 className="text-3xl font-bold mb-6">Explore Our Collection</h2>
-         <p className="text-lg mb-8">
-           Discover a wide range of instrumentals and sounds to elevate your music.
-         </p>
-       </div>
-       <div className="flex justify-center">
-         <img
-           src="/assets/images/instrumentals-collection.jpg"
-           alt="Instrumentals Collection"
-           className="rounded-lg shadow-lg max-w-full h-auto"
-         />
-       </div>
-     </section>
-   </div>
- );
+      <section
+        aria-label="Pricing plans"
+        className="flex flex-col lg:flex-row items-stretch justify-center gap-6 max-w-5xl mx-auto mb-50"
+      >
+        {plans.map((plan) => (
+          <div
+            key={plan.id}
+            className={[
+              "relative flex flex-col bg-gray-50/75 rounded-3xl p-8 w-full lg:w-80 ",
+              plan.featured
+                ? "ring-2 ring-primary shadow-xl lg:-translate-y-3"
+                : "border border-gray-200 shadow-md ",
+            ].join(" ")}
+          >
+            {plan.featured && (
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-primary-content text-xs font-semibold px-4 py-1 rounded-full tracking-wide">
+                Recommended
+              </span>
+            )}
+
+            <div className="mb-6">
+              <h2 className="font-poppins font-semibold text-2xl text-base-content">
+                {plan.name}
+              </h2>
+              <div className="mt-4 flex items-end gap-1">
+                <span className="font-poppins font-bold text-5xl text-base-content leading-none">
+                  {plan.credits}
+                </span>
+                <span className="text-sm text-base-content/50 mb-1 leading-snug">
+                  credits
+                  <br />
+                  /mo
+                </span>
+              </div>
+            </div>
+
+            <ul className="flex flex-col gap-3.5 mb-8 flex-1">
+              {plan.features.map((feature) => (
+                <FeatureItem
+                  key={feature.label}
+                  included={feature.included}
+                  label={feature.label}
+                />
+              ))}
+            </ul>
+
+            <div className="mt-auto">
+              <button
+                className={[
+                  "btn rounded-full w-full font-semibold",
+                  plan.featured
+                    ? "btn-primary"
+                    : "btn-outline border-base-content/30 text-base-content hover:bg-base-content hover:text-base-100",
+                ].join(" ")}
+                aria-label={`Notify me with ${plan.name}`}
+              >
+                Notify me
+              </button>
+            </div>
+          </div>
+        ))}
+      </section>
+      <FAQs />
+      <CTA />
+    </div>
+  );
 }
 
 export default Pricing;
