@@ -4,6 +4,7 @@ import { sounds } from "../utils/FeaturedSoundsData";
 //import { useState } from "react";
 //import { usePlayPause } from "../hooks/usePlayPause";
 import { useAudioPlayer } from "../hooks/useAudioPlayer";
+import MarqueeSlider from "@/components/MarqueeSlider.jsx";
 
 
 /**
@@ -59,6 +60,9 @@ function FeaturedSounds() {
                     />
                 ))}
 
+            </div>
+            <div>
+                <MarqueeSlider/>
             </div>
             <div>
                 <p className="font-poppins text-base-content text-center md:text-[18px]">

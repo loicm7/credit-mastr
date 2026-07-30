@@ -8,13 +8,13 @@ function MultiGenreBeats() {
     const { activeAudioCard, isPlaying, handlePlayPause, handleOnFinish } = useAudioPlayer();
 
     return (
-        <div className="col-start-1 col-end-17 bg-(--color-light-dark) pb-50 rounded-b-[80px]">
+        <div className="col-start-1 col-end-17 bg-(--color-light-dark) pb-50 ">
             
             <section className="">
                 
                 <div className="grid grid-cols-6 gap-x-4 gap-y-4">
                     <div className="col-start-2 col-span-4 text-center">
-                        <h2 className="font-poppins text-5xl md:text-6xl text-center text-base-100 font-bold capitalize mt-25" >Multi Genre for Everyone</h2>
+                        <h2 className="font-poppins text-5xl md:text-6xl text-center text-base-100 font-bold capitalize mt-25" >A Wide selection of music genres</h2>
                         <p className="py-6 font-poppins text-base-100 text-center md:text-[20px]">
                             Find the sound that fits your style.
                         </p>

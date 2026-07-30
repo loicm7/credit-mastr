@@ -261,6 +261,6 @@ creditmastr/
 3. Import and use in parent component
 
 ### Adding a New Page
-1. Create component in `src/pages/`
+1. Create component in `src/components/`
 2. Add route in React Router configuration
 3. Create navigation link if needed

@@ -60,7 +60,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
     
     return (
         
-            <div className=" w-full max-w-md md:max-w-xl  mx-auto  bg-base-200 rounded-lg 
+            <div className=" w-full max-w-md md:max-w-xl  mx-auto border border-solid border-[#2d2d2d0d] bg-base-200 rounded-lg 
                 flex items-center justify-start gap-x-8 shadow-md p-4  min-w-full">
                 <div className="w-[72px] h-[72px] shrink-0 ">
                     {/*<img className=" aspect-square rounded-lg object-cover" src={sound.imageId} loading="lazy" alt="Sound Thumbnail" /> */}

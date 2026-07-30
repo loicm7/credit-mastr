@@ -77,3 +77,87 @@ export const coverArtData = [
         audioUrl: "./audio/reggae_test.mp3"
     }
 ];
+
+export const MarqueeSliderCoverArtData = [
+    {
+        id: generateId(),
+        title: "Retro Trap",
+        imageId: "retro_trap_hiis7w"
+        
+    },
+    {
+        id: generateId(),
+        title: "Summer Piano vol. 1",
+        imageId: "summer_piano_aycqgs"
+    },
+    {
+        id: generateId(),
+        title: "Pop Star",
+        imageId: "pop_star_wvaz1w"
+    },
+    {
+        id: generateId(),
+        title: "Les freres cosmiques",
+        imageId: "LES_freres_cosmiques_xx88ku"
+    },
+    {
+        id: generateId(),
+        title: "Freshh",
+        imageId: "FRESHH_wbqrck"
+    },
+    {
+        id: generateId(),
+        title: "Afrobeat",
+        imageId: "AFROBEAT_Red_Colorful_Abstract_Art_pxaaeq"
+    },
+    {
+        id: generateId(),
+        title: "Afro Pops",
+        imageId: "afro_pops_tlptdw"
+    },
+    {
+        id: generateId(),
+        title: "Afro Rumba Drill",
+        imageId: "AFRO_RUMBA_DRILL_VOL_1_b96cgb"
+    },
+    {
+        id: generateId(),
+        title: "Space Crew",
+        imageId: "space_crew_yo8fap"
+    },
+    {
+        id: generateId(),
+        title: "Outer Space",
+        imageId: "outer_space_wvakkt"
+    },
+    {
+        id: generateId(),
+        title: "Frozen Drill",
+        imageId: "FROZEN_DRILL_pjgxt3"
+    },
+    {
+        id: generateId(),
+        title: "MTL 4 Konpa",
+        imageId: "Pochette_CD_Album_Musique_Photo_Nature_Montagne_évasion_Inspiration_Gras_Typographie_Minimaliste_ukmsob"
+    },
+    {
+        id: generateId(),
+        title: "Africana",
+        imageId: "africana_ytzjgt"
+    },
+    {
+        id: generateId(),
+        title: "Cyber Drill",
+        imageId: "cyberdrill_erz8fo"
+    },
+    {
+        id: generateId(),
+        title: "Oasis Of Hope",
+        imageId: "Black_and_Green_Acid_Brutalist_Electronic_Music_Album_Cover_xydcwp"
+    },
+    {
+        id: generateId(),
+        title: "Like A Dream",
+        imageId: "like_a_dream_nnnzub"
+    }
+]
