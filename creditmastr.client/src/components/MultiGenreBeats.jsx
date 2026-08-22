@@ -15,7 +15,7 @@ function MultiGenreBeats() {
                 <div className="grid grid-cols-6 gap-x-4 gap-y-4">
                     <div className="col-start-2 col-span-4 text-center">
                         <h2 className="font-poppins text-5xl md:text-6xl text-center text-base-100 font-bold capitalize mt-25" >A Wide selection of music genres</h2>
-                        <p className="py-6 font-poppins text-base-100 text-center md:text-[20px]">
+                        <p className="py-6 font-poppins text-base-100/70 text-center md:text-[20px]">
                             Find the sound that fits your style.
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-15">
@@ -43,7 +43,7 @@ function MultiGenreBeats() {
 
                             <div className="w-max items-center mx-auto mt-5">
                                 <div className="flex justify-start sm:justify-center md:justify-center lg:justify-start">
-                                    <button className="btn bg-base-100 text-base-content border-base-100 ">Join the waitlist</button>
+                                    <button className="btn bg-base-100 text-base-content border-base-100 rounded-full py-6 px-6">Join the waitlist</button>
                                 </div>
                             </div>
 

@@ -24,7 +24,7 @@ function HeroSection({ heroSectionImage }) {
 
 
                     <div className="lg:w-2/4 ">
-                        <h1 className="font-bold text-6xl sm:text-[30px] md:text-[70px] leading-[1.05] lg:w-150 font-poppins text-base-content text-left sm:text-center lg:text-left"> A library of original <span className="text-blue-600">beats</span> and <span className="text-blue-600">sounds</span></h1>
+                        <h1 className="font-bold text-6xl sm:text-[30px] md:text-[80px] leading-[1.05] lg:w-150 font-poppins text-base-content text-left sm:text-center lg:text-left"> A library of original <span className="text-blue-600">beats</span> and <span className="text-blue-600">sounds</span></h1>
                         <p className="py-6 font-poppins text-base-content text-left sm:text-center lg:text-left  md:text-[20px]">
                             Explore a growing catalog of modern, royalty-free industry-ready instrumentals and sounds, made by talented music producers, musicians and sound engineers.
                         </p>
