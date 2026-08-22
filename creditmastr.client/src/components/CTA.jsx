@@ -31,7 +31,7 @@ function CTA() {
                     <p className="mt-6 max-w-2xl font-poppins text-base leading-7 text-black/82 sm:text-lg lg:text-xl">
                         Unlock powerful sounds designed for your creative needs and make music faster
                     </p>
-                    <button className="btn mt-9 rounded-full border-white bg-white px-7 font-poppins text-base font-semibold text-neutral-950 shadow-xl shadow-neutral-950/20 hover:border-white hover:bg-white/90">
+                    <button className="btn mt-9 rounded-full border-white bg-white px-7 text-base font-semibold text-neutral-950 shadow-xl shadow-neutral-950/20 hover:border-white hover:bg-white/90">
                         Join the waitlist
                     </button>
                 </div>

@@ -43,7 +43,7 @@ function FeaturedSounds() {
         <section className="col-start-2 col-span-14 ">
             <p className="font-poppins font-medium text-2xl text-center text-blue-600 ">Credit Mastr is a</p>
             <h2 className="font-poppins text-5xl md:text-6xl text-center font-bold capitalize mt-5" >Beat & Sample Library</h2>
-            <p className="py-6 font-poppins text-base-content text-center md:text-[20px]">
+            <p className="py-6 font-poppins text-base-content/60 max-w-lg mx-auto text-center md:text-[20px]">
                 A new way to access high-quality beats, exclusive instrumentals and sounds all in one place.
             </p>
             <div className="mt-20 mb-20 grid xl:grid-flow-col xl:grid-rows-3 justify-center gap-4">
