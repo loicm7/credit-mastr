@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import GenreBeat from "./GenreBeat";
 import { coverArtData } from "../utils/coverArtData";
 import { useAudioPlayer } from "../hooks/useAudioPlayer";
@@ -43,7 +44,9 @@ function MultiGenreBeats() {
 
                             <div className="w-max items-center mx-auto mt-5">
                                 <div className="flex justify-start sm:justify-center md:justify-center lg:justify-start">
-                                    <button className="btn bg-base-100 text-base-content border-base-100 rounded-full py-6 px-6">Join the waitlist</button>
+                                    <Link to="/join-waitlist" className="btn bg-base-100 text-base-content border-base-100 rounded-full py-6 px-6 shadow-none">
+                                        Join the waitlist
+                                    </Link>
                                 </div>
                             </div>
 

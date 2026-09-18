@@ -49,7 +49,7 @@ function Navbar({ logo }) {
                 </div>
                 <div className="navbar-end">
 
-                    <button className="pointer-events-auto hidden lg:flex btn bg-blue-600 border-blue-600 rounded-full py-6 px-7 text-primary-content">Join the waitlist</button>
+                    <Link to="/join-waitlist" className="pointer-events-auto hidden lg:flex btn btn-primary rounded-full py-6 px-7 shadow-none">Join the waitlist</Link>
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-7 w-7 stroke-current"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
@@ -59,7 +59,7 @@ function Navbar({ logo }) {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-4  shadow">
                             <li><a className="pointer-events-auto font-poppins font-medium">Pricing</a></li>
                             <li><a className="pointer-events-auto my-1 font-poppins font-medium">How it work</a></li>
-                            <li><button className="btn bg-blue-600 text-primary-content">Join the waitlist</button></li>
+                            <li><Link to="/join-waitlist" className="btn btn-primary">Join the waitlist</Link></li>
                         </ul>
                     </div>
 

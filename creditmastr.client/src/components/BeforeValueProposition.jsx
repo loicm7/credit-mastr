@@ -1,9 +1,10 @@
+import { Link } from "react-router";
 import {Check, ArrowRight, BadgeDollarSign, Layers, Ban} from 'lucide-react';
 import CldBeforeValuePropositionImg from "@/components/ui/CldBeforeValuePropositionImg.jsx";
 
 function BeforeValueProposition() {
     return (
-        <div className="col-start-2 col-span-14 md:col-start-4 md:col-span-10 mb-15">
+        <div className="col-start-2 col-span-14 md:col-start-4 md:col-span-10">
             <section
                 className="relative overflow-hidden rounded-2xl shadow-md border border-solid border-[#2d2d2d0d]  mb-15">
 
@@ -44,8 +45,8 @@ function BeforeValueProposition() {
                             <p className="font-poppins text-[14px] md:text-[16px]  text-black mt-4 leading-relaxed">
                                 Grow your audience with studio-quality sounds ready for commercial use.
                                 Stop buying beats one at a time. Get instant access to a growing library of original
-                                instrumentals, samples, and loops.
-                                <ul className="mt-3 list-none p-0">
+                                instrumentals, samples, and loops.</p>
+                                <ul className="mt-3 list-none p-0 font-poppins text-[14px] md:text-[16px]">
                                     <li className="flex items-center gap-2 mb-2 text-[#565656]">
                                         <Check className="text-[#2563eb] w-5 h-5 shrink-0 "/>
                                         <span>Save thousands on individual beat purchases</span>
@@ -61,13 +62,13 @@ function BeforeValueProposition() {
                                     </li>
                                     
                                 </ul>
-                                <a className="flex items-center gap-4 mt-10 text-[#2563eb]">
-                                    <span className="font-medium">Join the waitlist </span>
+                                <Link to="/join-waitlist" className="flex items-center gap-4 mt-10 text-[#2563eb]">
+                                    <span className="font-medium font-poppins text-[14px] md:text-[16px]">Join the waitlist </span>
                                     <ArrowRight className="text-[#2563eb] w-5 h-5 shrink-0 "/>
                                     
-                                </a>
+                                </Link>
 
-                            </p>
+                            
                         </div>
                         <div className=" flex-none md:flex-none lg:flex-1 ">
                             <CldBeforeValuePropositionImg
@@ -100,8 +101,8 @@ function BeforeValueProposition() {
                             </h2>
                             <p className="font-poppins text-[14px] md:text-[16px]  text-black mt-4 leading-relaxed">
                                 The right instrumental or sample change everything. Skip the audio track hunt and find exactly what you're looking for with AI Search by Sound. Upload any audio reference file. All built for creators, artists and music producers.
-                                Browse by mood, genre, or tempo.
-                                <ul className="mt-3 list-none p-0">
+                                Browse by mood, genre, or tempo.</p>
+                                <ul className="mt-3 list-none p-0 font-poppins text-[14px] md:text-[16px]">
                                     <li className="flex items-center gap-2 mb-2 text-[#565656]">
                                         <Check className="text-[#2563eb] w-5 h-5 shrink-0 "/>
                                         <span>AI-Powered match and discovery</span>
@@ -117,19 +118,19 @@ function BeforeValueProposition() {
                                         <span>For everyone who creates</span>
                                     </li>
                                 </ul>
-                                <a className="flex items-center gap-4 mt-10 text-[#2563eb]">
-                                    <span className="font-medium">Join the waitlist </span>
+                                <Link to="/join-waitlist" className="flex items-center gap-4 mt-10 text-[#2563eb]">
+                                    <span className="font-medium font-poppins text-[14px] md:text-[16px]">Join the waitlist </span>
                                     <ArrowRight className="text-[#2563eb] w-5 h-5 shrink-0 "/>
 
-                                </a>
+                                </Link>
 
-                            </p>
+                            
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="relative overflow-hidden rounded-2xl   mb-15">
+            <section className="relative overflow-hidden rounded-2xl   mb-30">
 
                 <div className="relative p-5 xl:p-8 xl:pr-3">
                     <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-18">
@@ -151,8 +152,8 @@ function BeforeValueProposition() {
                             <p className="font-poppins text-[14px] md:text-[16px]  text-black mt-4 leading-relaxed">
                                 Keeps your creative well full with thousands of music production assets updated weekly. AI-suggested
                                 content tailored just for you.
-                                Inspiration isn't something you wait for, it's something you find. Creditmastr helps you find creative ideas faster.
-                                <ul className="mt-3 list-none p-0">
+                                Inspiration isn't something you wait for, it's something you find. Creditmastr helps you find creative ideas faster.</p>
+                                <ul className="mt-3 list-none p-0 font-poppins text-[14px] md:text-[16px]">
                                     <li className="flex items-center gap-2 mb-2 text-[#565656]">
                                         <Check className="text-[#2563eb] w-5 h-5 shrink-0 "/>
                                         <span>Contents, beats, drum kits, stems, presets, and MIDI</span>
@@ -171,13 +172,13 @@ function BeforeValueProposition() {
 
 
                                 </ul>
-                                <a className="flex items-center gap-4 mt-10 text-[#2563eb]">
+                                <Link to="/join-waitlist" className="flex items-center gap-4 mt-10 text-[#2563eb]">
                                     <span className="font-medium">Join the waitlist </span>
                                     <ArrowRight className="text-[#2563eb] w-5 h-5 shrink-0 "/>
 
-                                </a>
+                                </Link>
 
-                            </p>
+                            
                         </div>
                     </div>
                 </div>

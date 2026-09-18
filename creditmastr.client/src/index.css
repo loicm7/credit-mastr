@@ -29,8 +29,35 @@
             transform: translateY(0);
         }
     }
+
+    /* On garde votre configuration linéaire exacte sur 30 secondes */
+    --animate-glow-effect: GlowLoop 35s linear infinite;
+
+    @keyframes GlowLoop {
+        /* 0% à 0.8% : La lumière commence invisible et s'allume en douceur */
+        0% { --border-angle: 0deg; opacity: 0; filter: blur(0px) drop-shadow(0 0 0px transparent);}
+        0.8% { --border-angle: 40deg; opacity: 1; filter: blur(12px) drop-shadow(0 0 15px #a142f4);}
+
+        /* 0.8% à 4% : La lumière continue sa course normalement autour du bouton */
+        4% { --border-angle: 360deg; opacity: 1; filter: blur(12px) drop-shadow(0 0 15px #a142f4);}
+
+        /* 4% à 6.5% : La lumière continue de tourner légèrement en s'éteignant doucement */
+        6.5% { --border-angle: 380deg; opacity: 0; filter: blur(0px) drop-shadow(0 0 0px transparent);}
+
+        /* 6.51% à 100% : Le bouton reste totalement propre et inchangé pendant le reste des 30s */
+        6.51%, 100% { --border-angle: 0deg; opacity: 0; filter: blur(0px) drop-shadow(0 0 0px transparent);}
+    }
     
 }
+
+/* This is the magic key: It tells the browser that this variable is a strict angle mathematical unit */
+@property --border-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
 /* Utility for animating the gradient line below word*/
 @utility animate-gradient-shift {
     background-size: 200% 200%;
