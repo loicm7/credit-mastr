@@ -1,6 +1,7 @@
 import { Check, X} from 'lucide-react';
 import FAQs from "@/components/FAQs.jsx";
 import CTA from "@/components/CTA.jsx";
+import {Link} from "react-router";
 const CheckIcon = () => (
   <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 shrink-0">
     <Check className="w-3 h-3 text-white" aria-hidden="true"  strokeWidth={4}
@@ -138,7 +139,7 @@ export function Pricing() {
             </ul>
 
             <div className="mt-auto">
-              <button
+              <Link to="/join-waitlist"
                 className={[
                   "btn rounded-full w-full font-semibold",
                   plan.featured
@@ -148,7 +149,7 @@ export function Pricing() {
                 aria-label={`Notify me with ${plan.name}`}
               >
                 Notify me
-              </button>
+              </Link>
             </div>
           </div>
         ))}
