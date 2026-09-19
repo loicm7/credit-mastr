@@ -138,13 +138,13 @@ function JoinWaitlist() {
                                 >
                                     <div
                                         className="relative flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 shadow-[0_0_0_12px_rgba(16,185,129,0.08)]">
-                                        <Check className="h-10 w-10 stroke-[3]"/>
+                                        <Check className="h-10 w-10 stroke-3"/>
                                     </div>
                                     <h2 className="mt-8 font-poppins text-2xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-[2rem]">
                                         We&apos;ve added you to our waiting list!
                                     </h2>
                                     <p className="mt-3 max-w-lg text-sm leading-6 text-slate-600 sm:text-base">
-                                        We&apos;ll let you know when Creditmastr is ready.
+                                        We&apos;ll let you know when Creditmastr is ready. Thank you.
                                     </p>
 
                                     <div
@@ -163,7 +163,6 @@ function JoinWaitlist() {
                                             </div>
                                             <div
                                                 className="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
-
                                                 Confirmed
                                             </div>
                                         </div>
@@ -172,6 +171,7 @@ function JoinWaitlist() {
                                             You&apos;re on the list for launch updates and beta access.
                                         </p>
                                     </div>
+                                    
                                 </div>
                             ) : (
                                 <fetcher.Form method="post" noValidate className="space-y-4">
