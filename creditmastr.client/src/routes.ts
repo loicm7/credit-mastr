@@ -47,6 +47,7 @@ export default [
         route("/contact",        "routes/marketing/Contact.jsx"),
         route("/privacy-policy", "routes/marketing/PrivacyPolicy.jsx"),
         route("/terms",          "routes/marketing/TermsOfUse.jsx"),
+        route("*",              "./pages/NotFoundPage.jsx"),
     ]),
     
     //index("./App.jsx"),
@@ -56,5 +57,5 @@ export default [
     //route("/contact",       "./pages/Contact.jsx"),
     //route("/privacy-policy","./pages/PrivacyPolicy.jsx"),
     //route("/terms",         "./pages/TermsOfUse.jsx"),
-    route("*",              "./pages/NotFoundPage.jsx"),
+   // route("*",              "./pages/NotFoundPage.jsx"),
 ] satisfies RouteConfig;
