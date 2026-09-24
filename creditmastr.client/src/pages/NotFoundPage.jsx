@@ -1,5 +1,6 @@
 import { Link } from "react-router"; 
 import notFoundImage from '../assets/notfound.png';
+import BackHomeButton from "../components/ui/BackHomeButton";
 
 function NotFoundPage() {
  return (
@@ -15,9 +16,7 @@ function NotFoundPage() {
      <p className="text-gray-600 mb-6">
        The page you are looking for does not exist or has been moved.
      </p>
-     <Link to="/" className="px-6 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
-       Home
-     </Link>
+       <BackHomeButton/>
    </div>
  );
 }
