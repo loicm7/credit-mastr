@@ -30,7 +30,7 @@ function CTA() {
                         Ready to join the music creation revolution?
                     </h2>
                     <p className="mt-6 max-w-2xl font-poppins text-base leading-7 text-black/82 sm:text-lg lg:text-xl">
-                        Unlock powerful sounds designed for your creative needs and make music faster
+                        Unlock powerful sounds designed for your creative needs and make music faster and better
                     </p>
                     <Link to="/join-waitlist" className="btn mt-9 rounded-full border-white bg-white px-7 text-base font-semibold text-neutral-950 shadow-xl shadow-neutral-950/20 hover:border-white hover:bg-white/90">
                         Join the waitlist
