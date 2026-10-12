@@ -1,7 +1,7 @@
 import SoundFeatured from "./SoundFeatured";
 import WaitlistButton from "./ui/WaitlistButton";
-import { sounds } from "../utils/FeaturedSoundsData";
-//import { useState } from "react";
+import { sounds, categories} from "../utils/FeaturedSoundsData";
+import { useState, useEffect} from "react";
 //import { usePlayPause } from "../hooks/usePlayPause";
 import { useAudioPlayer } from "../hooks/useAudioPlayer";
 import MarqueeSlider from "@/components/MarqueeSlider.jsx";
@@ -12,10 +12,15 @@ import MarqueeSlider from "@/components/MarqueeSlider.jsx";
  * 
  * @returns {JSX.Element} react element section containing a list of audio cards
  */
+
 function FeaturedSounds() {
 
-    const { activeAudioCard, isPlaying, handlePlayPause, handleOnFinish } = useAudioPlayer();
-
+    const { activeTab, activeAudioCard, isPlaying, handlePlayPause, handleOnFinish, changeAudioTab} = useAudioPlayer();
+    
+    
+    
+    // visible audio card by categories
+    const visibleAudioCards = sounds?.filter(sound => sound.categoryId === activeTab);
 
     //const { activeAudioCard, isPlaying, handlePlayPause } = usePlayPause();
 
@@ -39,16 +44,27 @@ function FeaturedSounds() {
     */
 
     return (
-
+        
         <section className="col-start-2 col-span-14 ">
             <p className="font-poppins font-medium text-2xl text-center text-blue-600 ">Credit Mastr is a</p>
             <h2 className="font-poppins text-5xl md:text-6xl text-center font-bold capitalize mt-5" >Beat & Sample Library</h2>
             <p className="py-6 font-poppins text-base-content/60 max-w-lg mx-auto text-center md:text-[20px]">
                 A new way to access high-quality beats, exclusive instrumentals and sounds all in one place.
             </p>
+            
+            <div role="tablist" className="tabs tabs-box justify-center w-60 mx-auto rounded-xl" >
+                
+                {categories.map((category) => (
+                    <a role="tab" key={category.id} className={`tab ${activeTab === category.id ? "tab-active": ""}  duration-100 ease-in-out rounded-xl`} 
+                       onClick={() => changeAudioTab(category.id)}>
+                        {category.name}
+                    </a>
+                ))}
+            </div>
+            
             <div className="mt-20 mb-20 grid xl:grid-flow-col xl:grid-rows-3 justify-center gap-4">
                 {/* add sounds featured component */}
-                {sounds?.map((sound) => (
+                {visibleAudioCards?.map((sound) => (
 
                     <SoundFeatured
                         key={sound.id}
