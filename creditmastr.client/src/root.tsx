@@ -29,8 +29,8 @@ export function Layout({children,}: { children: React.ReactNode; }) {
 
 export default function Root() {
     return (
-        <AudioPlayerContextProvider>
+        
             <Outlet />
-        </AudioPlayerContextProvider>
+        
     );
 }

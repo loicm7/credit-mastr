@@ -1,15 +1,19 @@
 import { createContext, useState, useContext } from "react";
+import { categories} from "../utils/FeaturedSoundsData";
 
 const AudioPlayerContext = createContext({
     activeAudioCard: null,
     isPlaying: false,
+    activeTab: categories[0].id,
     handlePlayPause: () => { },
-    handleOnFinish: () => { }
+    handleOnFinish: () => { },
+    changeAudioTab: () => { }
 });
 
 export function AudioPlayerContextProvider({ children }) {
     const [activeAudioCard, setActiveAudioCard] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [activeTab, setActiveTab] = useState(categories[0].id); // for active tab for audio card (beat, loops, drums)
 
     const handlePlayPause = (soundId) => {
         if (activeAudioCard === soundId) {
@@ -26,8 +30,13 @@ export function AudioPlayerContextProvider({ children }) {
         setIsPlaying(false);
     };
 
+    const changeAudioTab = (id) => {
+        setActiveTab(id);
+        setIsPlaying(false);
+    }
+
     return (
-        <AudioPlayerContext.Provider value={{ activeAudioCard, isPlaying, handlePlayPause, handleOnFinish }}>
+        <AudioPlayerContext.Provider value={{ activeTab, activeAudioCard, isPlaying, handlePlayPause, handleOnFinish, changeAudioTab}}>
             {children}
         </AudioPlayerContext.Provider>
     );

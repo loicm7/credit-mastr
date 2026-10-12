@@ -29,7 +29,7 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
         if (!wavesurfer) {
             console.warn("Wavesurfer instance is not ready yet.");
             return;
-        };
+        }
         
         if (isActive && isPlaying) {
             wavesurfer.play();
@@ -41,6 +41,9 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
         if (!isActive)
             wavesurfer.stop();
 
+        return () => {
+            wavesurfer.stop();
+        };
         
     }, [isActive, isPlaying]);
 
@@ -80,8 +83,8 @@ export default function SoundFeatured({ sound, onClick, isActive, isPlaying, onF
                     <h1 className="font-semibold text-sm md:text-base lg:text-lg ">{sound.title}</h1>
 
                 <div className="flex flex-row gap-x-1 mask-r-from-90% md:mask-r-from-100%">
-                        {sound?.genre?.map((genre) => (
-                            <p key={genre} className="badge badge-sm md:badge-md badge-neutral whitespace-nowrap shrink-0">{genre}</p>
+                        {sound?.genre?.map((g) => (
+                            <p key={g} className="badge badge-sm md:badge-md badge-neutral whitespace-nowrap shrink-0">{g}</p>
                         ))}
                     </div>
 

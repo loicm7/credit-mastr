@@ -11,26 +11,21 @@ import MultiGenreBeats from '../../components/MultiGenreBeats.jsx';
 import ComparisonSection from '../../components/ComparisonSection.jsx';
 import FAQs from '../../components/FAQs.jsx';
 import CTA from '../../components/CTA.jsx';
-
-
-
-
-
-
+import {AudioPlayerContextProvider} from "../../hooks/useAudioPlayer";
 
 
 function App() {
-    
+
 
     return (
+        <AudioPlayerContextProvider>
+            <>
 
-        <>
 
-            
                 {/* (blue) radial gradient background on top */}
-                <div className="absolute top-0 z-[-2] h-full w-full bg-transparent bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(21,163,255,0)_100%)]"></div>
+                <div
+                    className="absolute top-0 z-[-2] h-full w-full bg-transparent bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(21,163,255,0)_100%)]"></div>
 
-                 
 
                 {/*
                 <main className="overflow-clip rounded-b-32">
@@ -44,32 +39,30 @@ function App() {
 
                 <main className="overflow-clip grid grid-cols-16 gap-x-4 gap-y-16">
                     {/* HERO SECTION*/}
-                    <HeroSection heroSectionImage="InstrumentBoxTransparent_hu1l24" />
+                    <HeroSection heroSectionImage="InstrumentBoxTransparent_hu1l24"/>
 
                     {/* FEATURE SECTION*/}
-                    <FeaturedSounds />
+                    <FeaturedSounds/>
 
                     {/* VALUE PROPOSITION SECTION 1*/}
-                    <BeforeValueProposition />
-                    
+                    <BeforeValueProposition/>
+
                     {/* VALUE PROPOSITION SECTION 2*/}
-                    <ValueProposition />
+                    <ValueProposition/>
 
                     {/* MULTI GENRE BEATS SECTION*/}
-                    <MultiGenreBeats />
+                    <MultiGenreBeats/>
 
-                    <ComparisonSection />
+                    <ComparisonSection/>
 
-                    <FAQs />
+                    <FAQs/>
 
-                    <CTA />
+                    <CTA/>
 
-                </main >
+                </main>
 
-                
-            
 
-            {/* grid column 6 example 
+                {/* grid column 6 example 
             <div class="bg-gray-100 p-8">
                 <div class="grid grid-cols-6 gap-x-4 gap-y-16">
                    
@@ -82,10 +75,11 @@ function App() {
                 </div>
             </div>
             */}
-        </>
+            </>
+        </AudioPlayerContextProvider>
     );
 
-    
+
 }
 
 export default App;
