@@ -191,7 +191,7 @@ function JoinWaitlist() {
                                             placeholder="Your full name"
                                             aria-invalid={errors?.fullname ? "true" : undefined}
                                             aria-describedby={errors?.fullname ? "fullname-error" : undefined}
-                                            className={`w-full rounded-xl border  bg-slate-50 px-4 py-3 text-slate-950 placeholder:text-slate-400 outline-none transition  focus:bg-white focus:ring-4  
+                                            className={`w-full rounded-full border  bg-slate-50 px-4 py-3 text-slate-950 placeholder:text-slate-400 outline-none transition  focus:bg-white focus:ring-4  
                                             ${
                                                 errors?.fullname
                                                     ? "border-red-500 focus:border-red-500 focus:ring-red-100"
@@ -216,7 +216,7 @@ function JoinWaitlist() {
                                             placeholder="you@example.com"
                                             aria-invalid={errors?.email ? "true" : undefined}
                                             aria-describedby={errors?.email ? "email-error" : undefined}
-                                            className={`w-full rounded-xl border  bg-slate-50 px-4 py-3 text-slate-950 placeholder:text-slate-400 outline-none transition  focus:bg-white focus:ring-4  
+                                            className={`w-full rounded-full border  bg-slate-50 px-4 py-3 text-slate-950 placeholder:text-slate-400 outline-none transition  focus:bg-white focus:ring-4  
                                             ${
                                                 errors?.email
                                                     ? "border-red-500 focus:border-red-500 focus:ring-red-100"

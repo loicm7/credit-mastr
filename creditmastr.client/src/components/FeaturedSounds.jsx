@@ -52,10 +52,13 @@ function FeaturedSounds() {
                 A new way to access high-quality beats, exclusive instrumentals and sounds all in one place.
             </p>
             
-            <div role="tablist" className="tabs tabs-box justify-center w-60 mx-auto rounded-xl" >
+            <div role="tablist" className="tabs tabs-box justify-center w-65 mx-auto rounded-full gap-2" >
                 
                 {categories.map((category) => (
-                    <a role="tab" key={category.id} className={`tab ${activeTab === category.id ? "tab-active": ""}  duration-100 ease-in-out rounded-xl`} 
+                    <a role="tab" key={category.id} 
+                       className={`tab btn font-normal ${activeTab === category.id 
+                           ? "tab-active shadow-md bg-[#155dfc] text-white": ""}  
+                             duration-100 ease-in-out rounded-full`} 
                        onClick={() => changeAudioTab(category.id)}>
                         {category.name}
                     </a>

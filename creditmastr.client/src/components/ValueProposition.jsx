@@ -14,7 +14,7 @@ function ValueProposition() {
                     <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
                         <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-3xl shadow-md">
                             <AudioLines size={50} color="black" />
-                            <h3 className="font-poppins text-2xl font-semibold mb-4">Sounds & Stems</h3>
+                            <h3 className="font-poppins text-2xl font-semibold mb-4">Sounds</h3>
                             <p className="font-poppins text-base-content/60 max-w-lg mx-auto ">Multi genre beats, samples and multitracks that give you full control.</p>
                         </article>
                         <article className="flex flex-col items-center text-center p-6 bg-base-100 rounded-3xl shadow-md">

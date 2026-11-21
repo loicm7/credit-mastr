@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 
 const navLinkClass = ({ isActive }) => 
     isActive ? "bg-neutral text-neutral-content text-[15px] rounded-full hover:rounded-full font-semibold pointer-events-auto" 
-        : "text-[15px] font-semibold pointer-events-auto hover:rounded-full";
+        : "text-[16px] font-semibold font-poppins pointer-events-auto hover:rounded-full";
 
 function Navbar({ logo }) {
     return (
@@ -25,7 +25,7 @@ function Navbar({ logo }) {
 
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 flex gap-3">
+                    <ul className="menu menu-horizontal px-1 flex gap-3 ">
                         <li>
                             <NavLink className={navLinkClass} to="/pricing" >
                                 Pricing
